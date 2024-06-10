@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: p8ptil5vx-nodejs-gitops
+  description: This is GitOps manifest for p8ptil5vx-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: p8ptil5vx-nodejs
+    janus-idp.io/tekton: p8ptil5vx-nodejs 
+    backstage.io/kubernetes-id: p8ptil5vx-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:p8ptil5vx-nodejs

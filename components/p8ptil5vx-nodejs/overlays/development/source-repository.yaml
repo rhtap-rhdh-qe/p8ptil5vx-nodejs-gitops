@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: p8ptil5vx-nodejs-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/p8ptil5vx-nodejs
